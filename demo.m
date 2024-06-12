@@ -19,7 +19,6 @@ for k=1:10
     x_lab15=double(unique(gtt15)+1);
     lab15=conv2vec(lab15);
     lab5=lab5./55+1;
-    gt5=round(gt5./50);
     lab5(gt5==0)=0;
     lab15(gtt15==0)=0;
     or1=unique(gt5);or2=unique(lab5);
